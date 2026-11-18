@@ -23,12 +23,14 @@ Item {
             anchors.fill: parent
             radius: 8
             color: col.popupBg
+            border.color: col.border
             antialiasing: true
 
             Rectangle {
                 implicitWidth: popup.width/4
                 implicitHeight: popup.height/4
                 color: col.bg
+                // border.color: col.border
             }
         }
     }
