@@ -1,5 +1,6 @@
 import QtQuick
 import Quickshell
+import Quickshell.Wayland
 
 Item {
     id: root
@@ -12,6 +13,7 @@ Item {
         anchor.item: cpuWidget
         anchor.edges: Edges.Bottom | Edges.Left
         anchor.gravity: Edges.Bottom | Edges.Right
+        anchor.margins.left: 4
 
         implicitWidth: 300
         implicitHeight: 300
@@ -19,19 +21,15 @@ Item {
 
         grabFocus: true
 
-        Rectangle {
-            anchors.fill: parent
+        BackgroundEffect.blurRegion: Region {
+            item: popup.contentItem
             radius: 8
-            color: col.popupBg
-            border.color: col.border
-            antialiasing: true
-
-            Rectangle {
-                implicitWidth: popup.width/4
-                implicitHeight: popup.height/4
-                color: col.bg
-                // border.color: col.border
-            }
+        }
+            
+        Rectangle {
+            implicitWidth: popup.width/4
+            implicitHeight: popup.width/4
+            color: col.bg
         }
     }
 }

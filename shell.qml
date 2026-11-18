@@ -14,9 +14,9 @@ PanelWindow {
     	right: true
     }
     margins {
-	    left: 5
-		right: 5 
-        top: 5
+	    left: -1
+		right: -1
+        top: 0
         bottom: 2
 	}
 
@@ -24,7 +24,6 @@ PanelWindow {
 	color: col.none
     BackgroundEffect.blurRegion: Region {
         item: backgroundBar
-        radius: 8
     }
 
     Rectangle {
@@ -32,8 +31,6 @@ PanelWindow {
         anchors.fill: parent
         radius: 8
         color: "#99110011"
-        border.color: col.borderBg
-        border.width: 1
     }
 
     // config
@@ -48,7 +45,7 @@ PanelWindow {
     // popups
     CpuPopup { id: cpuPopup }
 
-    // widgets
+    // widget
     Row {
         anchors.verticalCenter: parent.verticalCenter
 
