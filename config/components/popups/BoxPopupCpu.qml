@@ -11,4 +11,12 @@ Rectangle {
 
     color: col.bg
     border.color: col.border
+
+    Rectangle {
+        implicitWidth: 50
+        implicitHeight: 50
+
+        anchors.left: parent
+        color: col.iconBg
+    }
 }

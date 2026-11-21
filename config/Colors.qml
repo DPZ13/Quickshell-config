@@ -7,5 +7,5 @@ QtObject {
     readonly property color border: '#442277'
     readonly property color text: "#9900ff"
     readonly property color none: "transparent"
-    readonly property color blur: "#99110011"
+    readonly property color blur: '#11030303'
 }
