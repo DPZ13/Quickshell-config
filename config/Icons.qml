@@ -1,5 +1,6 @@
 import QtQuick
+import Quickshell
 
 QtObject {
-    readonly property string cpu: "../assets/icons/cpu.png"
+    readonly property string cpu: Quickshell.shellPath("assets/icons/cpu.png")
 }

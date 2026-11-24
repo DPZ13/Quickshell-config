@@ -1,11 +1,10 @@
 import QtQuick
 import Quickshell
 import Quickshell.Wayland
+import qs.config.components
 import qs.config.components.popups
-import "../config/components"
 
 Item {
-    
     PopupWindow {
         visible: cpuWidget.isActive
 
@@ -32,15 +31,39 @@ Item {
         Column {
             id: main
             anchors.centerIn: parent
-            spacing: 5
-            BoxPopupCpu { id: cpuUsage0 }
-            BoxPopupCpu { id: cpuUsage1 }
-            BoxPopupCpu { id: cpuUsage2 }
-            BoxPopupCpu { id: cpuUsage3 }
-            BoxPopupCpu { id: cpuUsage4 }
-            BoxPopupCpu { id: cpuUsage5 }
-            BoxPopupCpu { id: cpuUsage6 }
-            BoxPopupCpu { id: cpuUsage7 }
+            spacing: 15
+            BoxPopupCpu { 
+                id: cpuUsage0
+                currentCpu: 1
+                }
+            BoxPopupCpu { 
+                id: cpuUsage1
+                currentCpu: 2
+            }
+                BoxPopupCpu { 
+                id: cpuUsage2
+                currentCpu: 3
+            }
+                BoxPopupCpu { 
+                id: cpuUsage3
+                currentCpu: 4
+            }
+            BoxPopupCpu { 
+                id: cpuUsage4
+                currentCpu: 5
+            }
+                BoxPopupCpu { 
+                id: cpuUsage5
+                currentCpu: 6
+            }
+                BoxPopupCpu { 
+                id: cpuUsage6
+                currentCpu: 7
+            }
+                BoxPopupCpu { 
+                id: cpuUsage7
+                currentCpu: 8
+            }
         }
     }
 }

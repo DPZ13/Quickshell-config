@@ -7,6 +7,7 @@ import qs.widgets
 import qs.modules
 import qs.config
 import qs.config.components.popups
+import qs.config.components
 
 PanelWindow {
     anchors {
